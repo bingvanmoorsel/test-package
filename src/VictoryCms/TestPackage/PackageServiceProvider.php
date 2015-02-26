@@ -21,7 +21,7 @@ class PackageServiceProvider extends ServiceProvider
 
     public function install()
     {
-        var_dump(\App::make('artisan'));
+        var_dump(\Artisan::all());
     }
 
     public function update()
