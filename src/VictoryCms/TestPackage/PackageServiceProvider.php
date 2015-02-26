@@ -1,13 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: jrantwijk
- * Date: 23-2-2015
- * Time: 13:35
- */
-
-namespace VictoryCms\TestPackage;
-
+<?php namespace VictoryCms\TestPackage;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -30,7 +21,7 @@ class PackageServiceProvider extends ServiceProvider
 
     public function install()
     {
-        echo 'install';
+        var_dump($this->app);
     }
 
     public function update()
