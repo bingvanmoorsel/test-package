@@ -9,8 +9,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "victory-cms/installer": "dev-master"
+        "victory-cms/core": "dev-master"
     },
     "autoload": {
         "psr-0": {
