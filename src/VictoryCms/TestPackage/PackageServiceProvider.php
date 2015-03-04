@@ -21,7 +21,7 @@ class PackageServiceProvider extends ServiceProvider
 
     public function install()
     {
-        var_dump(\Artisan::all());
+        echo 'install test package';
     }
 
     public function update()
