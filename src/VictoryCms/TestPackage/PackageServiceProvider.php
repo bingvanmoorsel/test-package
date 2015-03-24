@@ -1,6 +1,7 @@
-<?php namespace VictoryCms\TestPackage;
+<?php namespace VictoryCms\Testpackage;
 
-use Illuminate\Support\ServiceProvider;
+use VictoryCms\Core\Providers\PackageServiceProvider as ServiceProvider;
+use VictoryCms\Testpackage\Http\Controllers\HomeController;
 
 class PackageServiceProvider extends ServiceProvider
 {
@@ -11,12 +12,14 @@ class PackageServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        echo 'register';
+        $this->loadViewsFrom(__DIR__.'/../../../resources/views/', 'victory.testpackage');
     }
 
     public function boot()
     {
-        echo 'boot';
+
+//        dd(new HomeController());
+        include_once(__DIR__.'/Http/routes.php');
     }
 
     public function install()
