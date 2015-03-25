@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "victory-cms/core": "dev-master"
+        "victory-cms/core": "dev-master@dev"
     },
     "autoload": {
         "psr-0": {

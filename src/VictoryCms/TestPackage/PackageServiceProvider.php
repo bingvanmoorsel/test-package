@@ -1,7 +1,6 @@
 <?php namespace VictoryCms\Testpackage;
 
 use VictoryCms\Core\Providers\PackageServiceProvider as ServiceProvider;
-use VictoryCms\Testpackage\Http\Controllers\HomeController;
 
 class PackageServiceProvider extends ServiceProvider
 {
