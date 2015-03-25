@@ -2,6 +2,6 @@
 
 $this->routes(function($router){
 
-    $router->get('/', 'VictoryCms\Testpackage\Http\Controllers\HomeController@index');
+    $router->get('/', 'VictoryCms\TestPackage\Http\Controllers\HomeController@index');
 
 });
